@@ -1,91 +1,98 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* ===== КОСМОС: тёмно-синий с бирюзой ===== */
 body {
   font-family: 'Inter', -apple-system, sans-serif;
-  color: #e8e0f5;
+  color: #d8e4f5;
   line-height: 1.65;
   min-height: 100vh;
-  background: #0a0618;
+  background: #060b1a;
   position: relative;
   overflow-x: hidden;
 }
 
+/* Слой 1 — туманности, медленно «дышат» */
 body::before {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(ellipse at 15% 20%, rgba(124, 92, 191, 0.55) 0%, transparent 50%),
-    radial-gradient(ellipse at 85% 30%, rgba(91, 63, 168, 0.5) 0%, transparent 45%),
-    radial-gradient(ellipse at 50% 80%, rgba(155, 111, 212, 0.45) 0%, transparent 55%),
-    radial-gradient(ellipse at 70% 60%, rgba(183, 148, 224, 0.3) 0%, transparent 40%),
-    radial-gradient(ellipse at 25% 90%, rgba(124, 92, 191, 0.4) 0%, transparent 45%);
+    radial-gradient(ellipse at 15% 20%, rgba(45, 90, 170, 0.55) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 30%, rgba(30, 130, 160, 0.45) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 80%, rgba(80, 60, 180, 0.45) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 60%, rgba(60, 150, 180, 0.3) 0%, transparent 40%),
+    radial-gradient(ellipse at 25% 90%, rgba(45, 90, 170, 0.4) 0%, transparent 45%);
   animation: nebulaFloat 30s ease-in-out infinite alternate;
 }
+
 @keyframes nebulaFloat {
   0% { transform: scale(1) translate(0, 0); }
   100% { transform: scale(1.15) translate(-2%, -2%); }
 }
 
+/* Слой 2 — мерцающие звёзды */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
   background-image:
-    radial-gradient(1.5px 1.5px at 10% 15%, #fff 50%, transparent 50%),
-    radial-gradient(2px 2px at 25% 8%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 40% 22%, #fff 50%, transparent 50%),
-    radial-gradient(1.5px 1.5px at 55% 12%, #fff 50%, transparent 50%),
-    radial-gradient(2px 2px at 70% 28%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 85% 18%, #fff 50%, transparent 50%),
-    radial-gradient(1.5px 1.5px at 92% 42%, #fff 50%, transparent 50%),
-    radial-gradient(2px 2px at 18% 55%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 35% 48%, #fff 50%, transparent 50%),
-    radial-gradient(1.5px 1.5px at 62% 62%, #fff 50%, transparent 50%),
-    radial-gradient(2px 2px at 78% 72%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 12% 78%, #fff 50%, transparent 50%),
-    radial-gradient(1.5px 1.5px at 48% 88%, #fff 50%, transparent 50%),
-    radial-gradient(2px 2px at 88% 92%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 5% 35%, #fff 50%, transparent 50%),
-    radial-gradient(1.5px 1.5px at 95% 65%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 42% 5%, #fff 50%, transparent 50%),
-    radial-gradient(2px 2px at 68% 95%, #fff 50%, transparent 50%),
-    radial-gradient(1px 1px at 30% 70%, #fff 50%, transparent 50%),
-    radial-gradient(1.5px 1.5px at 75% 45%, #fff 50%, transparent 50%);
+    radial-gradient(1.5px 1.5px at 10% 15%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(2px 2px at 25% 8%, #ffffff 50%, transparent 50%),
+    radial-gradient(1px 1px at 40% 22%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 55% 12%, #ffffff 50%, transparent 50%),
+    radial-gradient(2px 2px at 70% 28%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(1px 1px at 85% 18%, #ffffff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 92% 42%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(2px 2px at 18% 55%, #ffffff 50%, transparent 50%),
+    radial-gradient(1px 1px at 35% 48%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 62% 62%, #ffffff 50%, transparent 50%),
+    radial-gradient(2px 2px at 78% 72%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(1px 1px at 12% 78%, #ffffff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 48% 88%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(2px 2px at 88% 92%, #ffffff 50%, transparent 50%),
+    radial-gradient(1px 1px at 5% 35%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 95% 65%, #ffffff 50%, transparent 50%),
+    radial-gradient(1px 1px at 42% 5%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(2px 2px at 68% 95%, #ffffff 50%, transparent 50%),
+    radial-gradient(1px 1px at 30% 70%, #cfe6ff 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 75% 45%, #ffffff 50%, transparent 50%);
   animation: twinkle 4s ease-in-out infinite alternate;
 }
+
 @keyframes twinkle {
   0% { opacity: 0.5; }
   100% { opacity: 1; }
 }
 
+/* ===== ЗАГОЛОВКИ ===== */
 h2 {
   font-size: 2rem;
   margin-bottom: 28px;
   text-align: center;
-  color: #e8d9ff;
-  text-shadow: 0 0 20px rgba(183, 148, 224, 0.4);
+  color: #d8ecff;
+  text-shadow: 0 0 20px rgba(80, 180, 220, 0.5);
 }
 h2::after {
   content: '';
   display: block;
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #b794e0, #7c5cbf);
+  background: linear-gradient(90deg, #4ab8e0, #6a7ce0);
   margin: 14px auto 0;
   border-radius: 2px;
-  box-shadow: 0 0 15px rgba(183, 148, 224, 0.8);
+  box-shadow: 0 0 15px rgba(74, 184, 224, 0.8);
 }
 
+/* ===== HERO ===== */
 .hero {
   position: relative;
   min-height: 620px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1a0f2e url('brain.jpg') center/cover no-repeat;
+  background: #0a1530 url('brain.jpg') center/cover no-repeat;
   color: #fff;
   text-align: center;
   overflow: hidden;
@@ -93,19 +100,20 @@ h2::after {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(10, 5, 25, 0.7), rgba(40, 20, 80, 0.5));
+  background: linear-gradient(135deg, rgba(5, 15, 40, 0.75), rgba(20, 50, 100, 0.5));
   z-index: 1;
 }
 .hero-content { position: relative; z-index: 2; padding: 80px 20px; max-width: 900px; }
 .hero h1 {
   font-size: 3.4rem;
   font-weight: 800;
-  text-shadow: 0 0 30px rgba(183, 148, 224, 0.7), 0 2px 20px rgba(0,0,0,0.6);
+  text-shadow: 0 0 30px rgba(74, 184, 224, 0.7), 0 2px 20px rgba(0,0,0,0.6);
 }
 .subtitle { font-size: 1.3rem; opacity: 0.95; margin-bottom: 8px; }
 .location { font-size: 1.1rem; opacity: 0.9; margin-bottom: 20px; }
 .lead { max-width: 600px; margin: 0 auto 40px; font-size: 1.1rem; }
 
+/* ===== КНОПКИ ===== */
 .contact-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 30px 0; }
 .btn {
   display: inline-block;
@@ -117,19 +125,20 @@ h2::after {
   transition: transform 0.2s, background 0.2s, box-shadow 0.3s;
   cursor: pointer;
 }
-.btn:hover { transform: translateY(-3px); box-shadow: 0 0 30px rgba(183, 148, 224, 0.6); }
-.btn-call { background: #fff; color: #5b3fa8; border: 2px solid #b794e0; }
-.btn-call:hover { background: #b794e0; color: #fff; }
+.btn:hover { transform: translateY(-3px); box-shadow: 0 0 30px rgba(74, 184, 224, 0.6); }
+.btn-call { background: #fff; color: #1e5fa8; border: 2px solid #4ab8e0; }
+.btn-call:hover { background: #4ab8e0; color: #fff; }
 .btn-vk { background: #0077FF; color: #fff; }
 .btn-vk:hover { background: #0066dd; }
 
+/* ===== СЕКЦИИ — тёмное стекло ===== */
 section {
   max-width: 1000px;
   margin: 40px auto;
   padding: 60px 40px;
-  background: rgba(30, 20, 55, 0.55);
+  background: rgba(15, 30, 60, 0.55);
   backdrop-filter: blur(14px);
-  border: 1px solid rgba(183, 148, 224, 0.18);
+  border: 1px solid rgba(74, 184, 224, 0.2);
   border-radius: 28px;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -143,38 +152,41 @@ section {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  color: #c9bde0;
+  color: #a8c4e0;
 }
 
+/* ===== ЦИТАТА ===== */
 .quote-block {
   max-width: 700px;
   margin: 40px auto 0;
   padding: 30px 40px;
-  background: rgba(40, 25, 70, 0.7);
-  border-left: 5px solid #b794e0;
+  background: rgba(20, 40, 75, 0.7);
+  border-left: 5px solid #4ab8e0;
   border-radius: 16px;
-  box-shadow: 0 0 30px rgba(183, 148, 224, 0.2);
+  box-shadow: 0 0 30px rgba(74, 184, 224, 0.2);
 }
-.quote-block p { font-style: italic; font-size: 1.15rem; color: #e8d9ff; margin-bottom: 12px; text-align: left; }
-.quote-block span { display: block; font-size: 0.95rem; color: #9b8db5; text-align: right; }
+.quote-block p { font-style: italic; font-size: 1.15rem; color: #d8ecff; margin-bottom: 12px; text-align: left; }
+.quote-block span { display: block; font-size: 0.95rem; color: #7fa0c0; text-align: right; }
 
+/* ===== БОЛЬШОЕ ФОТО ===== */
 .photo-block { margin: 0 auto 32px; max-width: 800px; text-align: center; }
 .photo-block img {
   width: 100%;
   height: 440px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 12px 40px rgba(155, 111, 212, 0.4);
+  box-shadow: 0 12px 40px rgba(74, 184, 224, 0.4);
   transition: transform 0.4s;
 }
 .photo-block:hover img { transform: scale(1.02); }
-.photo-block figcaption { margin-top: 12px; font-size: 1rem; color: #9b8db5; font-style: italic; }
+.photo-block figcaption { margin-top: 12px; font-size: 1rem; color: #7fa0c0; font-style: italic; }
 
+/* ===== ЗОНЫ ===== */
 .zone-card {
   display: flex;
   gap: 20px;
   align-items: flex-start;
-  background: rgba(40, 25, 70, 0.6);
+  background: rgba(20, 40, 75, 0.6);
   padding: 26px 30px;
   border-radius: 16px;
   margin-bottom: 16px;
@@ -183,16 +195,16 @@ section {
   color: inherit;
   cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-  border: 1px solid rgba(183, 148, 224, 0.2);
+  border: 1px solid rgba(74, 184, 224, 0.2);
 }
 .zone-card:hover {
   transform: translateY(-5px) scale(1.01);
-  box-shadow: 0 12px 35px rgba(155, 111, 212, 0.5);
-  border-color: #b794e0;
+  box-shadow: 0 12px 35px rgba(74, 184, 224, 0.5);
+  border-color: #4ab8e0;
 }
 .zone-card:active { transform: translateY(-2px) scale(0.99); }
 .zone-num {
-  background: linear-gradient(135deg, #7c5cbf, #b794e0);
+  background: linear-gradient(135deg, #2d6ac0, #4ab8e0);
   color: #fff;
   width: 44px;
   height: 44px;
@@ -204,11 +216,11 @@ section {
   font-size: 1.2rem;
   flex-shrink: 0;
   transition: transform 0.25s;
-  box-shadow: 0 0 20px rgba(183, 148, 224, 0.6);
+  box-shadow: 0 0 20px rgba(74, 184, 224, 0.6);
 }
 .zone-card:hover .zone-num { transform: rotate(-10deg) scale(1.1); }
-.zone-card h3 { margin-bottom: 8px; color: #e8d9ff; }
-.zone-card p { color: #c9bde0; }
+.zone-card h3 { margin-bottom: 8px; color: #d8ecff; }
+.zone-card p { color: #a8c4e0; }
 
 .zone-photo { margin: 16px 0 0; text-align: center; }
 .zone-photo img {
@@ -218,16 +230,17 @@ section {
   object-fit: cover;
   object-position: center bottom;
   border-radius: 12px;
-  box-shadow: 0 6px 25px rgba(155, 111, 212, 0.3);
+  box-shadow: 0 6px 25px rgba(74, 184, 224, 0.3);
   transition: transform 0.3s;
 }
 .zone-card:hover .zone-photo img { transform: scale(1.03); }
-.zone-photo figcaption { font-size: 0.85rem; color: #9b8db5; font-style: italic; margin-top: 8px; }
+.zone-photo figcaption { font-size: 0.85rem; color: #7fa0c0; font-style: italic; margin-top: 8px; }
 
+/* ===== НАВЫКИ ===== */
 .section-lead {
   text-align: center;
   font-size: 1.1rem;
-  color: #9b8db5;
+  color: #7fa0c0;
   max-width: 700px;
   margin: 0 auto 40px;
 }
@@ -237,46 +250,48 @@ section {
   gap: 20px;
 }
 .skill-card {
-  background: rgba(40, 25, 70, 0.55);
+  background: rgba(20, 40, 75, 0.55);
   padding: 28px 24px;
   border-radius: 18px;
   text-align: center;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-  border: 1px solid rgba(183, 148, 224, 0.2);
+  border: 1px solid rgba(74, 184, 224, 0.2);
 }
 .skill-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(155, 111, 212, 0.4);
-  border-color: #b794e0;
+  box-shadow: 0 12px 35px rgba(74, 184, 224, 0.4);
+  border-color: #4ab8e0;
 }
 .skill-icon { font-size: 2.4rem; margin-bottom: 12px; }
-.skill-card h3 { color: #e8d9ff; margin-bottom: 8px; font-size: 1.15rem; }
-.skill-card p { color: #c9bde0; font-size: 0.95rem; }
+.skill-card h3 { color: #d8ecff; margin-bottom: 8px; font-size: 1.15rem; }
+.skill-card p { color: #a8c4e0; font-size: 0.95rem; }
 
+/* ===== ДЛЯ КОГО ===== */
 .whom-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
 }
 .whom-card {
-  background: rgba(40, 25, 70, 0.55);
+  background: rgba(20, 40, 75, 0.55);
   padding: 26px 24px;
   border-radius: 18px;
-  border-left: 4px solid #b794e0;
+  border-left: 4px solid #4ab8e0;
   transition: transform 0.25s, box-shadow 0.25s;
 }
 .whom-card:hover {
   transform: translateX(5px);
-  box-shadow: 0 8px 30px rgba(155, 111, 212, 0.4);
+  box-shadow: 0 8px 30px rgba(74, 184, 224, 0.4);
 }
-.whom-card h3 { color: #e8d9ff; margin-bottom: 8px; font-size: 1.15rem; }
-.whom-card p { color: #c9bde0; font-size: 0.95rem; }
+.whom-card h3 { color: #d8ecff; margin-bottom: 8px; font-size: 1.15rem; }
+.whom-card p { color: #a8c4e0; font-size: 0.95rem; }
 
+/* ===== ЦЕНЫ ===== */
 .prices { text-align: center; }
-.note { color: #9b8db5; margin-bottom: 30px; }
+.note { color: #7fa0c0; margin-bottom: 30px; }
 .price-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
 .price-card {
-  background: rgba(40, 25, 70, 0.6);
+  background: rgba(20, 40, 75, 0.6);
   padding: 28px 36px;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -285,43 +300,45 @@ section {
   color: inherit;
   cursor: pointer;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-  border: 1px solid rgba(183, 148, 224, 0.2);
+  border: 1px solid rgba(74, 184, 224, 0.2);
 }
 .price-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(155, 111, 212, 0.5);
-  border-color: #b794e0;
+  box-shadow: 0 12px 35px rgba(74, 184, 224, 0.5);
+  border-color: #4ab8e0;
 }
 .price-card.highlight {
-  border: 2px solid #b794e0;
-  background: rgba(60, 35, 100, 0.7);
-  box-shadow: 0 0 30px rgba(183, 148, 224, 0.4);
+  border: 2px solid #4ab8e0;
+  background: rgba(30, 60, 110, 0.7);
+  box-shadow: 0 0 30px rgba(74, 184, 224, 0.4);
 }
-.price-card.highlight:hover { border-color: #d4b8ff; }
-.price { font-size: 2rem; font-weight: 800; color: #d4b8ff; text-shadow: 0 0 15px rgba(183, 148, 224, 0.6); }
-.price-card h3 { color: #e8d9ff; }
-.price-card small { color: #9b8db5; }
+.price-card.highlight:hover { border-color: #7ed4f0; }
+.price { font-size: 2rem; font-weight: 800; color: #7ed4f0; text-shadow: 0 0 15px rgba(74, 184, 224, 0.6); }
+.price-card h3 { color: #d8ecff; }
+.price-card small { color: #7fa0c0; }
 
 .discounts { list-style: none; text-align: left; max-width: 500px; margin: 0 auto; }
-.discounts li { padding: 10px 0 10px 30px; position: relative; color: #c9bde0; }
-.discounts li::before { content: '✓'; position: absolute; left: 0; color: #b794e0; font-weight: 800; }
+.discounts li { padding: 10px 0 10px 30px; position: relative; color: #a8c4e0; }
+.discounts li::before { content: '✓'; position: absolute; left: 0; color: #4ab8e0; font-weight: 800; }
 
-.groups p { color: #c9bde0; }
+/* ===== ГРУППЫ ===== */
+.groups p { color: #a8c4e0; }
 .groups ul { list-style: none; margin-top: 16px; }
-.groups li { padding: 10px 0 10px 30px; position: relative; color: #c9bde0; }
-.groups li::before { content: '•'; position: absolute; left: 10px; color: #b794e0; font-weight: 800; }
+.groups li { padding: 10px 0 10px 30px; position: relative; color: #a8c4e0; }
+.groups li::before { content: '•'; position: absolute; left: 10px; color: #4ab8e0; font-weight: 800; }
 
+/* ===== ОТЗЫВЫ ===== */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 .review-card {
-  background: rgba(40, 25, 70, 0.55);
+  background: rgba(20, 40, 75, 0.55);
   padding: 28px 26px;
   border-radius: 18px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(183, 148, 224, 0.2);
+  border: 1px solid rgba(74, 184, 224, 0.2);
   position: relative;
   transition: transform 0.25s, border-color 0.25s;
 }
@@ -331,23 +348,56 @@ section {
   top: -10px;
   left: 20px;
   font-size: 4rem;
-  color: #b794e0;
+  color: #4ab8e0;
   font-family: Georgia, serif;
   line-height: 1;
-  text-shadow: 0 0 15px rgba(183, 148, 224, 0.6);
+  text-shadow: 0 0 15px rgba(74, 184, 224, 0.6);
 }
-.review-card:hover { transform: translateY(-5px); border-color: #b794e0; }
-.review-card p { font-style: italic; color: #e8d9ff; margin-bottom: 16px; }
-.review-card span { display: block; color: #9b8db5; font-size: 0.9rem; text-align: right; }
+.review-card:hover { transform: translateY(-5px); border-color: #4ab8e0; }
+.review-card p { font-style: italic; color: #d8ecff; margin-bottom: 16px; }
+.review-card span { display: block; color: #7fa0c0; font-size: 0.9rem; text-align: right; }
 
+/* ===== КОНТАКТЫ ===== */
 .contacts { text-align: center; }
-.contacts p { font-size: 1.1rem; margin-bottom: 8px; color: #c9bde0; }
-.contacts a { color: #d4b8ff; }
-.address-note, .hours-note { font-size: 0.95rem; color: #9b8db5; }
+.contacts p { font-size: 1.1rem; margin-bottom: 8px; color: #a8c4e0; }
+.contacts a { color: #7ed4f0; }
+.address-note, .hours-note { font-size: 0.95rem; color: #7fa0c0; }
 
 .contact-link {
   display: block;
   text-decoration: none;
   color: inherit;
   padding: 16px;
-  border-radius
+  border-radius: 12px;
+  transition: background 0.25s, transform 0.25s;
+  cursor: pointer;
+}
+.contact-link:hover {
+  background: rgba(74, 184, 224, 0.15);
+  transform: scale(1.02);
+}
+
+/* ===== ФУТЕР ===== */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #7fa0c0;
+  font-size: 0.9rem;
+  background: rgba(5, 15, 35, 0.6);
+  margin-top: 40px;
+  border-top: 1px solid rgba(74, 184, 224, 0.15);
+}
+.small { font-size: 0.8rem; margin-top: 8px; }
+
+/* ===== МОБИЛКА ===== */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.2rem; }
+  .hero { min-height: 500px; }
+  h2 { font-size: 1.5rem; }
+  section { padding: 40px 20px; margin: 20px auto; border-radius: 20px; }
+  .zone-card { flex-direction: column; align-items: center; text-align: center; }
+  .zone-photo img { height: 220px; }
+  .photo-block img { height: 260px; }
+  .btn { padding: 14px 26px; font-size: 0.95rem; }
+  .quote-block { padding: 24px 24px; }
+}
