@@ -6,22 +6,26 @@ body {
   color: #2d2a3e;
   line-height: 1.65;
   min-height: 100vh;
-  background-color: #f5f2fa;
+  background-color: #e6dcf5;
   background-image:
-    radial-gradient(circle at 10% 5%, rgba(124, 92, 191, 0.12) 0%, transparent 35%),
-    radial-gradient(circle at 90% 15%, rgba(91, 63, 168, 0.1) 0%, transparent 30%),
-    radial-gradient(circle at 50% 50%, rgba(155, 111, 212, 0.06) 0%, transparent 50%),
-    radial-gradient(circle at 20% 85%, rgba(124, 92, 191, 0.1) 0%, transparent 35%),
-    radial-gradient(circle at 80% 90%, rgba(91, 63, 168, 0.08) 0%, transparent 30%),
-    radial-gradient(2px 2px at 15% 20%, rgba(255,255,255,0.9) 50%, transparent 50%),
-    radial-gradient(2px 2px at 45% 15%, rgba(255,255,255,0.8) 50%, transparent 50%),
-    radial-gradient(1px 1px at 70% 30%, rgba(255,255,255,0.7) 50%, transparent 50%),
-    radial-gradient(2px 2px at 85% 55%, rgba(255,255,255,0.8) 50%, transparent 50%),
-    radial-gradient(1px 1px at 25% 65%, rgba(255,255,255,0.7) 50%, transparent 50%),
-    radial-gradient(2px 2px at 60% 80%, rgba(255,255,255,0.9) 50%, transparent 50%);
+    radial-gradient(circle at 8% 6%, rgba(124, 92, 191, 0.45) 0%, transparent 45%),
+    radial-gradient(circle at 92% 12%, rgba(91, 63, 168, 0.38) 0%, transparent 40%),
+    radial-gradient(circle at 50% 45%, rgba(155, 111, 212, 0.25) 0%, transparent 60%),
+    radial-gradient(circle at 15% 88%, rgba(124, 92, 191, 0.4) 0%, transparent 45%),
+    radial-gradient(circle at 85% 92%, rgba(91, 63, 168, 0.35) 0%, transparent 40%),
+    radial-gradient(circle at 30% 30%, rgba(183, 148, 224, 0.2) 0%, transparent 35%),
+    radial-gradient(circle at 70% 70%, rgba(155, 111, 212, 0.22) 0%, transparent 40%),
+    radial-gradient(2px 2px at 12% 18%, rgba(255,255,255,0.9) 50%, transparent 50%),
+    radial-gradient(2px 2px at 42% 12%, rgba(255,255,255,0.85) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 68% 28%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(2px 2px at 88% 52%, rgba(255,255,255,0.85) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 22% 62%, rgba(255,255,255,0.75) 50%, transparent 50%),
+    radial-gradient(2px 2px at 58% 82%, rgba(255,255,255,0.9) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 78% 88%, rgba(255,255,255,0.8) 50%, transparent 50%),
+    radial-gradient(1.5px 1.5px at 35% 45%, rgba(255,255,255,0.7) 50%, transparent 50%),
+    radial-gradient(2px 2px at 92% 32%, rgba(255,255,255,0.8) 50%, transparent 50%);
   background-attachment: fixed;
 }
-
 h2 { font-size: 2rem; margin-bottom: 28px; text-align: center; color: #4a3f6b; }
 h2::after { content: ''; display: block; width: 60px; height: 3px; background: linear-gradient(90deg, #7c5cbf, #b794e0); margin: 14px auto 0; border-radius: 2px; }
 
