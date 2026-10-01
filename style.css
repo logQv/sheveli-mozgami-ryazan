@@ -123,8 +123,9 @@ section { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
 .zone-photo img {
   width: 100%;
   max-width: 420px;
-  height: 260px;
+  height: 300px;
   object-fit: cover;
+  object-position: center bottom;   /* показываем низ — там главное */
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(91, 63, 168, 0.15);
   transition: transform 0.3s;
