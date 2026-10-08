@@ -100,6 +100,16 @@
   </a>
 </section>
 
+<section class="brain-3d-section">
+  <h2>Мозг в 3D</h2>
+  <p class="section-lead">Покрути мышкой — посмотри, как устроен мозг со всех сторон.</p>
+  <div id="brain-3d"></div>
+  <p class="model-credit">
+    Модель: <a href="https://sketchfab.com" target="_blank" rel="noopener">Sketchfab</a>, 
+    лицензия <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC-BY-4.0</a>
+  </p>
+</section>
+
 <section class="skills">
   <h2>Что развивает музей</h2>
   <p class="section-lead">Каждое задание в музее тренирует конкретные навыки. Вот что уносит с собой ребёнок после посещения:</p>
@@ -141,12 +151,12 @@
 <section class="gallery">
   <h2>Как у нас внутри</h2>
   <div class="gallery-grid">
-    <img src="tylpop.jpg" alt="Зал музея">
-    <img src="gopol.jpg" alt="Экспонаты">
-    <img src="doplop.jpg" alt="Дети за экспонатами">
-    <img src="neirotrenaver.jpg" alt="Нейротренажёры">
-    <img src="zona.jpg" alt="Зона мозга">
-    <img src="nerona.jpg" alt="Нейроны">
+    <img src="director.jpg" alt="Зал музея">
+    <img src="petr.jpg" alt="Экспонаты">
+    <img src="pui.jpg" alt="Дети за экспонатами">
+    <img src="ter.jpg" alt="Нейротренажёры">
+    <img src="ger.jpg" alt="Зона мозга">
+    <img src="brain.jpg" alt="Нейроны">
   </div>
 </section>
 
@@ -198,8 +208,8 @@
   </div>
 
   <ul class="discounts">
-    <li>Многодетные семьи — скидка 100p</li>
-    <li>Пенсионеры, люди с ОВЗ — скидка 100p</li>
+    <li>Многодетные семьи — скидка 25%</li>
+    <li>Пенсионеры, люди с ОВЗ — скидка 20%</li>
     <li>Дети до 3 лет — бесплатно</li>
   </ul>
 </section>
@@ -209,7 +219,7 @@
   <p>Для организованных групп (школы, классы, компании) — предварительная запись по телефону. Мы предложим удобное время, и в музее не будет других групп.</p>
   <ul>
     <li>Для групп более 25 человек — скидка</li>
-    <li>Взрослые сопровождающие — бесплатно (1 взрослый на 15 детей)</li>
+    <li>Взрослые сопровождающие — бесплатно (1 взрослый на 10 детей)</li>
   </ul>
 </section>
 
@@ -247,12 +257,12 @@
     <p>Да, мы работаем по предварительной записи. Так в музее не будет толпы, и каждому хватит времени на все экспонаты.</p>
   </details>
   <details>
-    <summary>Можно ли отпраздновать день рождения?</summary>
-    <p>да. Именинник получит незабываемые эмоции , пройдет научно-познавательный квест с друзьями и получит тематический сувенир в подарок .</p>
+    <summary>Можно ли с детьми на коляске?</summary>
+    <p>Да, музей доступен для колясок. Если нужна помощь — предупредите при записи.</p>
   </details>
   <details>
-    <summary>Возможно ли посещение большой группой?</summary>
-    <p>Да. До 40 человек ,мы будем только рады.</p>
+    <summary>Есть ли скидки для больших групп?</summary>
+    <p>Да. Для групп более 25 человек — специальная цена. Уточните при записи.</p>
   </details>
 </section>
 
@@ -287,6 +297,10 @@
 
 <a href="tel:+79537418848" class="sticky-cta">📞 Записаться</a>
 
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/OrbitControls.js"></script>
 <script src="script.js"></script>
+<script src="brain3d.js"></script>
 </body>
 </html>
