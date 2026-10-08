@@ -1,6 +1,5 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* ===== КОСМОС: тёмно-синий с бирюзой ===== */
 body {
   font-family: 'Inter', -apple-system, sans-serif;
   color: #d8e4f5;
@@ -80,7 +79,6 @@ h2::after {
   box-shadow: 0 0 15px rgba(74, 184, 224, 0.8);
 }
 
-/* ===== HERO ===== */
 .hero {
   position: relative;
   min-height: 680px;
@@ -132,7 +130,6 @@ h2::after {
 }
 .hero-stat p { font-size: 0.85rem; opacity: 0.9; margin: 0; }
 
-/* ===== КНОПКИ ===== */
 .contact-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 30px 0; }
 .btn {
   display: inline-block;
@@ -150,7 +147,6 @@ h2::after {
 .btn-vk { background: #0077FF; color: #fff; }
 .btn-vk:hover { background: #0066dd; }
 
-/* ===== СЕКЦИИ ===== */
 section {
   max-width: 1000px;
   margin: 40px auto;
@@ -252,7 +248,6 @@ section {
 .zone-card:hover .zone-photo img { transform: scale(1.03); }
 .zone-photo figcaption { font-size: 0.85rem; color: #7fa0c0; font-style: italic; margin-top: 8px; }
 
-/* ===== 3D МОЗГ ===== */
 .brain-3d-section { text-align: center; }
 #brain-3d {
   width: 100%;
@@ -271,7 +266,6 @@ section {
 }
 .model-credit a { color: #4ab8e0; }
 
-/* ===== НАВЫКИ ===== */
 .section-lead {
   text-align: center;
   font-size: 1.1rem;
@@ -300,21 +294,3 @@ section {
 .skill-icon { font-size: 2.4rem; margin-bottom: 12px; }
 .skill-card h3 { color: #d8ecff; margin-bottom: 8px; font-size: 1.15rem; }
 .skill-card p { color: #a8c4e0; font-size: 0.95rem; }
-
-/* ===== ГАЛЕРЕЯ ===== */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-.gallery-grid img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(74, 184, 224, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
-.gallery-grid img:hover {
-  transform
