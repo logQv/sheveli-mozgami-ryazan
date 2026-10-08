@@ -1,6 +1,13 @@
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
 (function () {
   const container = document.getElementById('brain-3d');
-  if (!container) return;
+  if (!container) {
+    console.error('Не найден элемент #brain-3d');
+    return;
+  }
 
   // Сцена
   const scene = new THREE.Scene();
@@ -22,8 +29,7 @@
   container.appendChild(renderer.domElement);
 
   // Свет
-  const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
-  scene.add(ambientLight);
+  scene.add(new THREE.AmbientLight(0xffffff, 1.2));
 
   const frontLight = new THREE.DirectionalLight(0xffffff, 1.5);
   frontLight.position.set(5, 5, 5);
@@ -34,7 +40,7 @@
   scene.add(backLight);
 
   // Управление мышью
-  const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.dampingFactor = 0.08;
   controls.autoRotate = true;
@@ -45,28 +51,24 @@
   controls.maxDistance = 12;
 
   // Загрузка модели
-  const loader = new THREE.GLTFLoader();
+  const loader = new GLTFLoader();
   loader.load(
     'brain_hologram.glb',
     (gltf) => {
       const model = gltf.scene;
-
-      // Подгоняем размер под сцену
-      // Если модель слишком большая/маленькая — меняй это число
       model.scale.set(2, 2, 2);
-
-      // Центрируем
       model.position.set(0, 0, 0);
-
       scene.add(model);
-      console.log('Модель загружена:', model);
+      console.log('✅ Модель загружена');
     },
     (progress) => {
-      console.log('Загрузка:', (progress.loaded / progress.total * 100).toFixed(0) + '%');
+      if (progress.total > 0) {
+        console.log('Загрузка:', (progress.loaded / progress.total * 100).toFixed(0) + '%');
+      }
     },
     (error) => {
-      console.error('Ошибка загрузки модели:', error);
-      container.innerHTML = '<p style="color:#7fa0c0;padding:40px;text-align:center;">Не удалось загрузить 3D-модель.</p>';
+      console.error('❌ Ошибка загрузки модели:', error);
+      container.innerHTML = '<p style="color:#7fa0c0;padding:40px;text-align:center;">Не удалось загрузить модель.</p>';
     }
   );
 
